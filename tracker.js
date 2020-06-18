@@ -1,4 +1,5 @@
 (function () {
+  console.log("main")
   XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send;
   XMLHttpRequest.prototype.send = function (value) {
     this.addEventListener(
